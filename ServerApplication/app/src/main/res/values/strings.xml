@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">AOU Server</string>
+    <string name="available_devices_string">Available Devices</string>
+    <string name="paired_devices_string">Paired Devices</string>
+    <string name="no_heart_beat_text">No input value</string>
+    <string name="paragraph">Product Library Fire suppression systems for server rooms
+	    and data centres:\n\n\nMethod 1 - Inert gas fire suppression systems for server room and Data Centres - Reduce Oxygen
+        This method uses Argon/Nitrogen and sometimes a small element of CO2 to displace the oxygen in the server room.
+        The basis of this method is to reduce the oxygen level to below 15%.  By reducing oxygen to this level it will suppress a fire.\n\n\n
+        Method 2 - Chemical/Synthetic gas fire suppression systems for server room and Data Centres - based on cooling
+    Most Chemical/Synthetic fire suppression agents have some form of cooling mechanism. These systems generally use
+        less gas and do not significantly reduce oxygen levels.  However, as any synthetic or chemical agent, high doses can
+        be toxic, therefor correct designs are absolutely necessary.\n\n\n
+
+2-High humidity:\n\n
+
+1.    Reducing the supply of fresh air to the computer room with the minimum pressurization and ventilation.\n
+2.    Measure the temperature of air entering the IT equipment.\n
+3.    Resolve each hot spot (which affects the air going into other IT equipment) plates with bleach, floor gratings moving, removing the \n
+
+4.To de-humidify, the dew point must be below 15 ° C / 59 ° F (for temperatures, air-supplied IT equipment from 23 ° C / 74.4 ° F and 27 ° C / 80.6 ° F).
+        Since in most refrigeration systems the dew point of the device (ADP) \n
+5.    PERIODICALLY, you should monitor the temperature of dry bulb and dew point of incoming air to the IT equipment.\n\n\n
+
+3-smoke :\n\n
+1-Check local air quality reports. \n
+2-Consult local visibility guides.\n
+3-Keep indoor air as clean as possible .\n
+4- Avoid activities that increase indoor pollution.\n
+</string>
+</resources>
