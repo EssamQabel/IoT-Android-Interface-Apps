@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+         xmlns:app="http://schemas.android.com/apk/res-auto"
+         xmlns:tools="http://schemas.android.com/tools"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         tools:context=".MainActivity">
+
+         <pl.droidsonroids.gif.GifImageView
+                  android:id="@+id/gifImage"
+                  android:layout_width="313dp"
+                  android:layout_height="170dp"
+                  android:layout_marginStart="16dp"
+                  android:layout_marginEnd="16dp"
+                  android:layout_marginBottom="8dp"
+                  android:src="@drawable/animatedheartsbeatstwo"
+                  app:layout_constraintBottom_toBottomOf="parent"
+                  app:layout_constraintEnd_toEndOf="parent"
+                  app:layout_constraintStart_toStartOf="parent"
+                  app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
+                  app:layout_constraintVertical_bias="0.495" />
+
+         <TextView
+                  android:id="@+id/no_input_value_text_view"
+                  android:textSize="25sp"
+                  android:textColor="@color/colorPrimary"
+                  android:text="@string/no_heart_beat_text"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  app:layout_constraintBottom_toBottomOf="parent"
+                  app:layout_constraintEnd_toEndOf="parent"
+                  app:layout_constraintStart_toStartOf="parent"
+                  app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
+                  app:layout_constraintVertical_bias="0.495" />
+
+         <android.support.constraint.ConstraintLayout
+                  android:id="@+id/constraintLayout"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  app:layout_constraintBottom_toBottomOf="parent"
+                  app:layout_constraintEnd_toEndOf="parent"
+                  app:layout_constraintHorizontal_bias="0.503"
+                  app:layout_constraintStart_toStartOf="parent"
+                  app:layout_constraintTop_toTopOf="parent"
+                  app:layout_constraintVertical_bias="0.25">
+
+                  <TextView
+                           android:id="@+id/heart_beats_text_view"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:gravity="center_vertical"
+                           android:text="59"
+                           android:textColor="#3d3e41"
+                           android:textSize="60sp"
+                           app:layout_constraintBottom_toBottomOf="parent"
+                           app:layout_constraintEnd_toEndOf="parent"
+                           app:layout_constraintHorizontal_bias="0.4"
+                           app:layout_constraintStart_toStartOf="parent"
+                           app:layout_constraintTop_toTopOf="parent"
+                           app:layout_constraintVertical_bias="0.5" />
+
+                  <LinearLayout
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_marginEnd="8dp"
+                           android:orientation="vertical"
+                           app:layout_constraintBottom_toBottomOf="parent"
+                           app:layout_constraintEnd_toEndOf="@+id/circularSeekBar"
+                           app:layout_constraintHorizontal_bias="0.8"
+                           app:layout_constraintStart_toStartOf="@+id/circularSeekBar"
+                           app:layout_constraintTop_toTopOf="parent">
+
+                           <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/heart_icon" />
+
+                           <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="BPM"
+                                    android:textColor="#3d3e41" />
+                  </LinearLayout>
+
+                  <me.tankery.lib.circularseekbar.CircularSeekBar
+                           android:id="@+id/circularSeekBar"
+                           android:layout_width="225dp"
+                           android:layout_height="225dp"
+                           app:cs_circle_progress_color="@android:color/holo_red_dark"
+                           app:cs_circle_stroke_width="15dp"
+                           app:cs_disable_pointer="true"
+                           app:cs_lock_enabled="false"
+                           app:cs_max="60"
+                           app:cs_negative_enabled="false"
+                           app:cs_progress="40" />
+
+         </android.support.constraint.ConstraintLayout>
+
+
+         <LinearLayout
+                  android:id="@+id/black_linear_layout"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:background="@android:color/black"
+                  android:orientation="horizontal"
+                  android:visibility="invisible">
+
+         </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
